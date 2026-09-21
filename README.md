@@ -1,4 +1,15 @@
-# React + Vite
+# StudentAssist
+
+This is a student assistance website built with React and Vite.
+
+## Development
+
+Install dependencies and start the development server:
+
+```bash
+npm install
+npm run dev
+```
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
