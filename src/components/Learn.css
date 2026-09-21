@@ -1,0 +1,1159 @@
+/* =====================================================
+   STUDENTSOLVE - LEARN PAGE
+   COMPLETE CSS
+===================================================== */
+/* =====================================================
+   MAIN PAGE
+===================================================== */
+
+.learn-page {
+  min-height: 100vh;
+
+  padding: 32px 40px 50px;
+
+  background: #f6f8fc;
+
+  color: #1e293b;
+
+  font-family: Arial, sans-serif;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.learn-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 28px;
+}
+
+.learn-header h1 {
+  margin: 12px 0 6px;
+
+  font-size: 30px;
+
+  font-weight: 700;
+
+  color: #172033;
+}
+
+.learn-header p {
+  margin: 0;
+
+  color: #7b8494;
+
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   BACK BUTTON
+===================================================== */
+
+.back-btn {
+  border: none;
+
+  background: transparent;
+
+  color: #4f46e5;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  padding: 0;
+
+  transition: 0.25s ease;
+}
+
+.back-btn:hover {
+  color: #3730a3;
+
+  transform: translateX(-3px);
+}
+
+
+/* =====================================================
+   STUDENT COUNT
+===================================================== */
+
+.student-count {
+  min-width: 95px;
+
+  padding: 12px 18px;
+
+  border-radius: 13px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f5;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  box-shadow:
+    0 6px 20px rgba(31, 41, 55, 0.06);
+}
+
+.student-count strong {
+  color: #4f46e5;
+
+  font-size: 22px;
+}
+
+.student-count span {
+  color: #8992a3;
+
+  font-size: 11px;
+
+  margin-top: 2px;
+}
+
+
+/* =====================================================
+   STUDENTS LOADING
+===================================================== */
+
+.learn-loading {
+  background: #ffffff;
+
+  padding: 25px;
+
+  border-radius: 14px;
+
+  text-align: center;
+
+  color: #7b8494;
+
+  font-size: 14px;
+
+  margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   SHARED SKILLS SECTION
+===================================================== */
+
+.shared-skills-section {
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 24px;
+
+  margin-bottom: 35px;
+
+  border: 1px solid #edf0f5;
+
+  box-shadow:
+    0 8px 28px rgba(31, 41, 55, 0.06);
+}
+
+
+/* =====================================================
+   SHARED SKILLS HEADER
+===================================================== */
+
+.shared-skills-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 24px;
+}
+
+.shared-skills-header h2 {
+  margin: 0 0 6px;
+
+  color: #172033;
+
+  font-size: 21px;
+}
+
+.shared-skills-header p {
+  margin: 0;
+
+  color: #7b8494;
+
+  font-size: 13px;
+
+  max-width: 600px;
+
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   SKILLS COUNT
+===================================================== */
+
+.skills-count {
+  min-width: 75px;
+
+  padding: 10px 15px;
+
+  border-radius: 12px;
+
+  background: #f5f3ff;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.skills-count strong {
+  color: #4f46e5;
+
+  font-size: 20px;
+}
+
+.skills-count span {
+  color: #8a92a3;
+
+  font-size: 10px;
+
+  margin-top: 2px;
+}
+
+
+/* =====================================================
+   SKILLS GRID
+===================================================== */
+
+.skills-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fill, minmax(260px, 1fr));
+
+  gap: 20px;
+}
+
+
+/* =====================================================
+   SHARED SKILL CARD
+===================================================== */
+
+.learn-skill-card {
+  min-height: 270px;
+
+  padding: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #e9edf4;
+
+  border-radius: 16px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  position: relative;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.learn-skill-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #d9d5ff;
+
+  box-shadow:
+    0 14px 30px rgba(79, 70, 229, 0.12);
+}
+
+
+/* =====================================================
+   SKILL ICON
+===================================================== */
+
+.skill-card-icon {
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 11px;
+
+  background: linear-gradient(
+    135deg,
+    #eeeeff,
+    #f5f3ff
+  );
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 19px;
+
+  margin-bottom: 13px;
+}
+
+
+/* =====================================================
+   SKILL CATEGORY
+===================================================== */
+
+.learn-skill-category {
+  width: fit-content;
+
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  background: #f1f0ff;
+
+  color: #4f46e5;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  margin-bottom: 9px;
+}
+
+
+/* =====================================================
+   SKILL TITLE
+===================================================== */
+
+.learn-skill-card h3 {
+  margin: 0 0 9px;
+
+  color: #1e293b;
+
+  font-size: 18px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   SKILL DESCRIPTION
+===================================================== */
+
+.learn-skill-description {
+  margin: 0;
+
+  color: #7b8494;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  display: -webkit-box;
+
+  /* -webkit-line-clamp: 3; */
+
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   SKILL OWNER
+===================================================== */
+
+.skill-owner {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: auto;
+
+  padding-top: 17px;
+}
+
+
+/* =====================================================
+   OWNER AVATAR
+===================================================== */
+
+.owner-avatar {
+  width: 36px;
+
+  height: 36px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #8b5cf6
+  );
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   OWNER TEXT
+===================================================== */
+
+.skill-owner small {
+  display: block;
+
+  color: #9aa2b1;
+
+  font-size: 10px;
+}
+
+.skill-owner strong {
+  display: block;
+
+  color: #374151;
+
+  font-size: 12px;
+
+  margin-top: 2px;
+}
+
+
+/* =====================================================
+   SKILL CONNECT BUTTON
+===================================================== */
+
+.skill-connect-btn {
+  width: 100%;
+
+  margin-top: 14px;
+
+  padding: 10px 12px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #4f46e5;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.skill-connect-btn:hover {
+  background: #4338ca;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 5px 12px rgba(79, 70, 229, 0.2);
+}
+
+
+/* =====================================================
+   SKILLS LOADING
+===================================================== */
+
+.skills-loading {
+  text-align: center;
+
+  padding: 30px;
+
+  color: #7b8494;
+
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   NO SKILLS
+===================================================== */
+
+.no-skills {
+  text-align: center;
+
+  padding: 40px 20px;
+
+  border: 1px dashed #d8dce5;
+
+  border-radius: 14px;
+
+  background: #fafbff;
+}
+
+.no-skills-icon {
+  font-size: 34px;
+
+  margin-bottom: 8px;
+}
+
+.no-skills h3 {
+  margin: 0 0 6px;
+
+  font-size: 17px;
+
+  color: #374151;
+}
+
+.no-skills p {
+  margin: 0;
+
+  color: #8b94a5;
+
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   DISCOVER STUDENTS SECTION
+===================================================== */
+
+.students-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fill, minmax(260px, 1fr));
+
+  gap: 20px;
+}
+
+
+/* =====================================================
+   STUDENT CARD
+===================================================== */
+
+.student-card {
+  min-height: 250px;
+
+  background: #ffffff;
+
+  border: 1px solid #e9edf4;
+
+  border-radius: 16px;
+
+  padding: 22px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 6px 20px rgba(31, 41, 55, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #dcd9ff;
+
+  box-shadow:
+    0 14px 30px rgba(79, 70, 229, 0.11);
+}
+
+
+/* =====================================================
+   STUDENT AVATAR
+===================================================== */
+
+.student-avatar {
+  width: 62px;
+
+  height: 62px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #8b5cf6
+  );
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 23px;
+
+  font-weight: 700;
+
+  margin-bottom: 14px;
+
+  box-shadow:
+    0 7px 16px rgba(79, 70, 229, 0.2);
+}
+
+
+/* =====================================================
+   STUDENT INFORMATION
+===================================================== */
+
+.student-info {
+  width: 100%;
+}
+
+.student-info h2 {
+  margin: 0 0 6px;
+
+  color: #1e293b;
+
+  font-size: 18px;
+}
+
+.student-email {
+  margin: 0;
+
+  color: #8a93a3;
+
+  font-size: 12px;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+.student-skill {
+  margin: 9px 0 17px;
+
+  color: #6366f1;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   STUDENT CONNECT BUTTON
+===================================================== */
+
+.connect-btn {
+  width: 100%;
+
+  border: none;
+
+  border-radius: 9px;
+
+  padding: 10px 12px;
+
+  background: #4f46e5;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.connect-btn:hover {
+  background: #4338ca;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 5px 14px rgba(79, 70, 229, 0.2);
+}
+
+
+/* =====================================================
+   PROFILE OVERLAY
+===================================================== */
+
+.profile-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(15, 23, 42, 0.55);
+
+  backdrop-filter: blur(5px);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  z-index: 999;
+}
+
+
+/* =====================================================
+   PROFILE MODAL
+===================================================== */
+
+.profile-modal {
+  width: 100%;
+
+  max-width: 410px;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  position: relative;
+
+  text-align: center;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 25px 70px rgba(15, 23, 42, 0.25);
+
+  animation:
+    profilePopup 0.3s ease;
+}
+
+
+/* =====================================================
+   PROFILE POPUP ANIMATION
+===================================================== */
+
+@keyframes profilePopup {
+
+  from {
+    opacity: 0;
+
+    transform:
+      scale(0.92)
+      translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      scale(1)
+      translateY(0);
+  }
+
+}
+
+
+/* =====================================================
+   CLOSE PROFILE BUTTON
+===================================================== */
+
+.close-profile {
+  position: absolute;
+
+  top: 13px;
+
+  right: 15px;
+
+  width: 32px;
+
+  height: 32px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #f1f3f7;
+
+  color: #64748b;
+
+  font-size: 21px;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.close-profile:hover {
+  background: #fee2e2;
+
+  color: #ef4444;
+
+  transform: rotate(90deg);
+}
+
+
+/* =====================================================
+   PROFILE AVATAR
+===================================================== */
+
+.profile-avatar {
+  width: 72px;
+
+  height: 72px;
+
+  margin: 0 auto 12px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #8b5cf6
+  );
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 10px 25px rgba(79, 70, 229, 0.22);
+}
+
+
+/* =====================================================
+   PROFILE NAME
+===================================================== */
+
+.profile-modal h2 {
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 22px;
+}
+
+.profile-role {
+  margin: 5px 0 22px;
+
+  color: #8a93a3;
+
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   PROFILE DETAILS
+===================================================== */
+
+.profile-details {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  text-align: left;
+
+  margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   PROFILE DETAIL ITEM
+===================================================== */
+
+.profile-detail {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 11px;
+
+  border-radius: 11px;
+
+  background: #f8f9fc;
+
+  border: 1px solid #edf0f5;
+}
+
+
+/* =====================================================
+   PROFILE DETAIL ICON
+===================================================== */
+
+.profile-detail > span {
+  width: 32px;
+
+  height: 32px;
+
+  flex-shrink: 0;
+
+  border-radius: 9px;
+
+  background: #eeeeff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 15px;
+}
+
+
+/* =====================================================
+   PROFILE DETAIL LABEL
+===================================================== */
+
+.profile-detail small {
+  display: block;
+
+  color: #9aa2b1;
+
+  font-size: 9px;
+
+  margin-bottom: 2px;
+}
+
+
+/* =====================================================
+   PROFILE DETAIL TEXT
+===================================================== */
+
+.profile-detail p {
+  margin: 0;
+
+  color: #374151;
+
+  font-size: 11px;
+
+  word-break: break-word;
+}
+
+
+/* =====================================================
+   PROFILE CONNECT BUTTON
+===================================================== */
+
+.message-btn {
+  width: 100%;
+
+  padding: 11px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #4f46e5;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.message-btn:hover {
+  background: #4338ca;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 7px 16px rgba(79, 70, 229, 0.2);
+}
+
+
+/* =====================================================
+   EMPTY STUDENTS
+===================================================== */
+
+.empty-students {
+  background: #ffffff;
+
+  padding: 45px 20px;
+
+  border-radius: 16px;
+
+  text-align: center;
+
+  border: 1px solid #edf0f5;
+
+  box-sizing: border-box;
+}
+
+.empty-students h2 {
+  margin: 0 0 8px;
+
+  color: #374151;
+
+  font-size: 20px;
+}
+
+.empty-students p {
+  margin: 0;
+
+  color: #8b94a5;
+
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   TABLET RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .learn-page {
+    padding: 25px;
+  }
+
+  .skills-grid,
+  .students-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .learn-page {
+    padding: 18px;
+  }
+
+
+  /* Header */
+
+  .learn-header {
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .learn-header h1 {
+    font-size: 24px;
+  }
+
+  .learn-header p {
+    font-size: 12px;
+  }
+
+
+  /* Student count */
+
+  .student-count {
+    min-width: 65px;
+
+    padding: 9px 12px;
+  }
+
+
+  /* Shared skills */
+
+  .shared-skills-section {
+    padding: 17px;
+  }
+
+  .shared-skills-header {
+    align-items: flex-start;
+
+    gap: 12px;
+  }
+
+  .shared-skills-header h2 {
+    font-size: 19px;
+  }
+
+
+  /* Cards */
+
+  .skills-grid,
+  .students-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learn-skill-card {
+    min-height: 250px;
+  }
+
+  .student-card {
+    min-height: 230px;
+  }
+
+
+  /* Modal */
+
+  .profile-modal {
+    padding: 25px 18px;
+  }
+
+}
+
+
+
+
+
+
+

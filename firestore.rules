@@ -1,0 +1,40 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Users collection - anyone logged in can read profiles (needed for
+    // the "Discover Students" / Learn page), but a user can only create
+    // or edit their OWN profile document.
+    match /users/{userId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null && request.auth.uid == userId;
+      allow update: if request.auth != null && request.auth.uid == userId;
+      allow delete: if false;
+    }
+
+    // Skills collection - any logged-in user can read shared skills,
+    // but only the owner (userId field on the skill) can edit/delete it.
+    match /skills/{skillId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null
+                    && request.resource.data.userId == request.auth.uid;
+      allow update, delete: if request.auth != null
+                    && resource.data.userId == request.auth.uid;
+    }
+
+    // Connection requests - only the sender or receiver can read a
+    // request. Only the sender can create it, and only the receiver
+    // can update its status (accept/reject).
+    match /connectionRequests/{requestId} {
+      allow read: if request.auth != null
+                  && (request.auth.uid == resource.data.senderId
+                      || request.auth.uid == resource.data.receiverId);
+      allow create: if request.auth != null
+                    && request.resource.data.senderId == request.auth.uid;
+      allow update: if request.auth != null
+                    && request.auth.uid == resource.data.receiverId;
+      allow delete: if false;
+    }
+  }
+}
